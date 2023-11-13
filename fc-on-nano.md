@@ -1,1 +1,1 @@
-# Guide to Getting Started with Firecracker on Raspberry Pi
+# Guide to Getting Started with Firecracker on Jetson Nano
