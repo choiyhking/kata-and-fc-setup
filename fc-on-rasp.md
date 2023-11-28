@@ -58,8 +58,8 @@ sudo systemctl status libvirtd.service
 - Docker 설치
 
 ```bash
-curl -fsSL [https://get.docker.com](https://get.docker.com/) -o [get-docker.sh](http://get-docker.sh/)
-sudo sh [get-docker.sh](http://get-docker.sh/)
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
 docker --version
 ```
 
