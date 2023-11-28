@@ -98,6 +98,7 @@ latest=$(basename $(curl -fsSLI -o /dev/null -w  %{url_effective} ${release_url}
 curl -L ${release_url}/download/${latest}/firecracker-${latest}-${ARCH}.tgz | tar -xz
 
 # Rename the binary to "firecracker"
+release-v1.5.0-aarch64
 mv release-${latest}-$(uname -m)/firecracker-${latest}-${ARCH} firecracker
 ```
 
