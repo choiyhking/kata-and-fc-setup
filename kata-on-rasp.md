@@ -40,11 +40,11 @@ sudo mkdir -p /etc/kata-containers
 sudo vim /opt/kata/share/defaults/kata-containers/configuration.toml
 
 `
-internetworking_model = "none"
-disable_new_netns = "true"
+internetworking_model="none"
+disable_new_netns="true"
 `
 
-image = "docker.io/library/busybox:latest"
+image="docker.io/library/busybox:latest"
 sudo ctr image pull "$image"
 sudo ctr run --runtime "io.containerd.kata.v2" --rm -t "$image" test-kata uname -r
 결과 > 6.1.38
