@@ -120,7 +120,7 @@ sudo cp ./firecracker_src/build/cargo_target/${ARCH}-unknown-linux-musl/debug/fi
 ```
 
 ```bash
-truncate -s 3G ubuntu-22.04.ext4
+truncate -s 8G ubuntu-22.04.ext4
 resize2fs ubuntu-22.04.ext4
 ```
 
@@ -148,7 +148,7 @@ vim vm_config.json
   ],
   "machine-config": {
     "vcpu_count": 2,
-    "mem_size_mib": 2000000,
+    "mem_size_mib": 4000000,
     "smt": false,
     "track_dirty_pages": false
   },
