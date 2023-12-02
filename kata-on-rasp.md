@@ -19,7 +19,9 @@ sudo tar -xf containerd-1.6.8-linux-arm64.tar.gz -C /usr/local
 ls /usr/local/bin
 
 sudo mkdir -p /etc/containerd
-containerd config default > /etc/containerd/config.toml (root 상태로)
+sudo su
+containerd config default > /etc/containerd/config.toml 
+exit
 
 sudo vim /etc/containerd/config.toml
 
