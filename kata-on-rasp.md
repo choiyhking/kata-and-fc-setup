@@ -44,9 +44,12 @@ internetworking_model="none"
 disable_new_netns="true"
 `
 
-image="docker.io/library/busybox:latest"
-sudo ctr image pull "$image"
-sudo ctr run --runtime "io.containerd.kata.v2" --rm -t "$image" test-kata uname -r
-결과 > 6.1.38
+wget https://github.com/containerd/nerdctl/releases/download/v1.7.0/nerdctl-1.7.0-linux-arm64.tar.gz
+sudo tar Cxzvvf /usr/local/bin nerdctl-1.7.0-linux-arm64.tar.gz
 
+wget https://github.com/containernetworking/plugins/releases/download/v1.3.0/cni-plugins-linux-arm64-v1.3.0.tgz
+sudo mkdir -p /opt/cni/bin
+sudo tar -xvzf cni-plugins-linux-arm64-v1.3.0.tgz -C /opt/cni/bin/
+
+sudo nerdctl run -it --rm --runtime io.containerd.kata.v2 busybox sh
 ```
