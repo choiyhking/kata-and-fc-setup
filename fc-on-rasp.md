@@ -147,8 +147,8 @@ vim vm_config.json
     }
   ],
   "machine-config": {
-    "vcpu_count": 2,
-    "mem_size_mib": 4000000,
+    "vcpu_count": 4,
+    "mem_size_mib": 4096,
     "smt": false,
     "track_dirty_pages": false
   },
