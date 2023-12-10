@@ -1,4 +1,4 @@
-ㅂ# Guide to Getting Started with Kata Containers on Raspberry Pi
+# Guide to Getting Started with Kata Containers on Raspberry Pi
 
 ```shell
 sudo rm /dev/loop*
