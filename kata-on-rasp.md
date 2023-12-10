@@ -1,9 +1,9 @@
-# Guide to Getting Started with Kata Containers on Raspberry Pi
+ㅂ# Guide to Getting Started with Kata Containers on Raspberry Pi
 
 ```shell
 sudo rm /dev/loop*
 
-wget wget https://github.com/kata-containers/kata-containers/releases/download/3.2.0/kata-static-3.2.0-arm64.tar.xz
+wget https://github.com/kata-containers/kata-containers/releases/download/3.2.0/kata-static-3.2.0-arm64.tar.xz
 sudo tar -xf kata-static-3.2.0-arm64.tar.xz -C /
 
 sudo ln -s /opt/kata/bin/kata-monitor /usr/local/bin
