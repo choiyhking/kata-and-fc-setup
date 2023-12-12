@@ -178,6 +178,9 @@ vim vm_config.json
 ```
 
 ```bash
+API_SOCKET="/tmp/firecracker.socket"
+sudo rm -f $API_SOCKET
+
 # Setup network interface
 TAP_DEV="tap0"
 TAP_IP="172.16.0.1"
